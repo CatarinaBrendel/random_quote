@@ -36,6 +36,9 @@
             } else if(isset($_POST['clearQuote'])) {echo '';} ?>
         </p>
       </div>
+      <footer>
+        <p> 2019&copy; Catarina Brendel</p>
+      </footer>
   </main>
 </body>
 </html>
