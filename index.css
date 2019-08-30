@@ -1,0 +1,47 @@
+html {
+  background-color: #E8EAFA;
+  color: #444;
+}
+
+main {
+  background-color: #FDB9C8;
+  border-radius: 5px;
+  max-width: 70%;
+  max-height: 100vh;
+  margin: 10% auto;
+  padding: 50px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.button {
+  border-radius: 5px;
+  color: inherit;
+  cursor: pointer;
+  font-size: inherit;
+  margin: 0 20px;
+  outline: none;
+  padding: 5px 10px;
+}
+
+.button:hover {
+  background-color:#82DDEC;
+}
+
+.random {
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.quote {
+  margin-bottom: 5px; 
+}
+
+.author{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 0;
+}
