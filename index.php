@@ -17,28 +17,28 @@
 <body>
   <main>
     <h1>Welcome to the Random Quote Generator!</h1>
-      <p>Everytime you press the button, a new quote will be randomly selected for you. Please give it a try!</p>
-      <form method="POST" action="#">
-        <input class="button" type="submit" name="randomQuote" value="Randomize me!">
-        <input class="button" type="submit" name="clearQuote" value="Clean Screen">
-      </form>
-      <div class="random">
-        <h2 class="quote">
-          <?php 
-            if(isset($_POST['randomQuote'])) {
-              echo $quotes[$randomQuote][0];
-            } else if(isset($_POST['clearQuote'])) {echo '';}?>
-        </h2>
-        <p class="author">
-          <?php 
-            if(isset($_POST['randomQuote'])) {
-              echo " by " . $quotes[$randomQuote][1]; 
-            } else if(isset($_POST['clearQuote'])) {echo '';} ?>
-        </p>
-      </div>
-      <footer>
-        <p> 2019&copy; Catarina Brendel</p>
-      </footer>
+    <p>Everytime you press the button, a new quote will be randomly selected for you. Please give it a try!</p>
+    <form method="POST" action="#">
+      <input class="button" type="submit" name="randomQuote" value="Randomize me!">
+      <input class="button" type="submit" name="clearQuote" value="Clean Screen">
+    </form>
+    <div class="random">
+      <h2 class="quote">
+        <?php 
+          if(isset($_POST['randomQuote'])) {
+            echo $quotes[$randomQuote][0];
+          } else if(isset($_POST['clearQuote'])) {echo '';}?>
+      </h2>
+      <p class="author">
+        <?php 
+          if(isset($_POST['randomQuote'])) {
+            echo " by " . $quotes[$randomQuote][1]; 
+          } else if(isset($_POST['clearQuote'])) {echo '';} ?>
+      </p>
+    </div>
   </main>
+  <footer class="footer">
+    <p> 2019&copy; Catarina Brendel</p>
+  </footer>
 </body>
 </html>

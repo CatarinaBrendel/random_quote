@@ -6,7 +6,7 @@ html {
 main {
   background-color: #FDB9C8;
   border-radius: 5px;
-  max-width: 70%;
+  max-width: 60%;
   max-height: 100vh;
   margin: 10% auto;
   padding: 50px;
@@ -44,4 +44,42 @@ h1 {
 .author{
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   margin: 0;
+}
+
+.footer {
+  max-width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer p {
+  display: inline-block;
+  text-align: center;
+}
+
+@media (max-width: 580px) {
+  .button {
+    margin: 10px;
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 24px;
+    max-width: 95%;
+    margin: 0 auto;
+  }
+
+  .random {
+    max-width: 100%;
+  }
+
+  .quote {
+    font-size: 18px;
+  }
 }
